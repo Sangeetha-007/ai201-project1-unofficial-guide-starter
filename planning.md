@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+The domain I chose is "course and professor reviews". While I was a Brooklyn College Student for my undergraduate degree, it was hard to locate information about professors because information was not in one location and rather from different sources. This makes the information valuable. 
 ---
 
 ## Documents

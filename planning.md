@@ -20,16 +20,16 @@ The domain I chose is "course and professor reviews". While I was a Brooklyn Col
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/2995207 |
-| 2 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/167158|
-| 3 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/334831 |
-| 4 | RateMyProfessor| | https://www.ratemyprofessors.com/professor/2722205 |
-| 5 | RateMyProfessor | | https://www.ratemyprofessors.com/professor/156077 |
-| 6 | Reddit | | https://www.reddit.com/r/CUNY/comments/1ci3hcu/brooklyn_college_professor_review_cisc/ |
+| 1 | RateMyProfessor | Review Site of Professors, review of Prof. Panneer Santhalingam |https://www.ratemyprofessors.com/professor/2995207 |
+| 2 | RateMyProfessor | Review Site of Professors, review of Prof. Murray Gross |https://www.ratemyprofessors.com/professor/167158|
+| 3 | RateMyProfessor | Review Site of Professors, review of Prof. Dina Sokol |https://www.ratemyprofessors.com/professor/334831 |
+| 4 | RateMyProfessor| Review Site of Professors, review of Prof. Adele Piontnica | https://www.ratemyprofessors.com/professor/2722205 |
+| 5 | RateMyProfessor | Review Site of Professors, review of Prof. Deborah Elefant | https://www.ratemyprofessors.com/professor/156077 |
+| 6 | Reddit | Online Forum | https://www.reddit.com/r/CUNY/comments/1ci3hcu/brooklyn_college_professor_review_cisc/ |
 | 7 | CollegeVine | | https://www.collegevine.com/faq/40319/thoughts-on-computer-science-program-at-brooklyn-college |
-| 8 | Introduction to Programming Using C++ Syllabus | | /Users/sangeetha/Downloads/CISC1110.pdf |
-| 9 | Data Structures Syllabus | | /Users/sangeetha/Downloads/CISC3130.pdf |
-| 10 | Object-Oriented Programming Syllabus | | /Users/sangeetha/Downloads/CISC_3150.pdf |
+| 8 | Introduction to Programming Using C++ Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC1110.pdf |
+| 9 | Data Structures Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC3130.pdf |
+| 10 | Object-Oriented Programming Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC_3150.pdf |
 
 ---
 
@@ -46,6 +46,9 @@ Hybrid: Semantic Chunking and Retrieval Chunking
 Chunk size =128
 **Overlap:**
 Overlap = 13
+
+Overlap defines how much text is shared between consecutive chunks. It is typically used to avoid losing important information at chunk boundaries. A small overlap reduces redundancy but risks cutting explanations in half, while a larger overlap increases robustness at the cost of storing and processing more similar chunks.
+
 **Reasoning:**
 
 ---
@@ -69,8 +72,11 @@ will increase it if needed. Overlap is considered best if its 10-12% of chunk si
      The chunk size I hope to use is 128. 
 
 **Embedding model:**
+sentence-transformers (all-MiniLM-L6-v2)
 
 **Top-k:**
+Top-k=3
+The number of retrieved results specifies how many text segments are returned by the retrieval step. A small Top-k can miss relevant context, while a large Top-k increases recall but may introduce noise.
 
 **Production tradeoff reflection:**
 
@@ -85,11 +91,11 @@ will increase it if needed. Overlap is considered best if its 10-12% of chunk si
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | How does Brooklyn College's CS program compare to NYU and Columbia? | If you value small class sizes and a more personalized learning experience, Brooklyn College's CS program might be a better fit compared to larger, more renowned programs at institutions like NYU or Columbia. However, if prestige and connections to big tech companies are more important to you, the programs at NYU/Columbia may provide more of what you're looking for. |
+| 2 | Which Computer Science course teaches big-O notation? | Data Structures |
+| 3 | What's Prof. Dina Sokol's overall rating? | 3.7 |
+| 4 | What's Prof. Deborah Elefant's level of difficulty? | 3 |
+| 5 | How many credits is CISC 3150? | 3 credits |
 
 ---
 

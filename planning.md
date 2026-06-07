@@ -20,16 +20,16 @@ The domain I chose is "course and professor reviews". While I was a Brooklyn Col
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/2995207 |
+| 2 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/167158|
+| 3 | RateMyProfessor | |https://www.ratemyprofessors.com/professor/334831 |
+| 4 | RateMyProfessor| | https://www.ratemyprofessors.com/professor/2722205 |
+| 5 | RateMyProfessor | | https://www.ratemyprofessors.com/professor/156077 |
+| 6 | Reddit | | https://www.reddit.com/r/CUNY/comments/1ci3hcu/brooklyn_college_professor_review_cisc/ |
+| 7 | CollegeVine | | https://www.collegevine.com/faq/40319/thoughts-on-computer-science-program-at-brooklyn-college |
+| 8 | Introduction to Programming Using C++ Syllabus | | /Users/sangeetha/Downloads/CISC1110.pdf |
+| 9 | Data Structures Syllabus | | /Users/sangeetha/Downloads/CISC3130.pdf |
+| 10 | Object-Oriented Programming Syllabus | | /Users/sangeetha/Downloads/CISC_3150.pdf |
 
 ---
 
@@ -40,13 +40,22 @@ The domain I chose is "course and professor reviews". While I was a Brooklyn Col
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
+Hybrid: Semantic Chunking and Retrieval Chunking
+
 **Chunk size:**
-
+Chunk size =128
 **Overlap:**
-
+Overlap = 13
 **Reasoning:**
 
 ---
+My sources are online reviews, forums and short documents (2-3 pages). This is why I started the chunk size with a low number (128). I
+will increase it if needed. Overlap is considered best if its 10-12% of chunk size so I chose 13 (rounded up from 12.8)
+
+<!--
+- Are your documents short reviews (1–3 sentences) or long guides (many paragraphs)? How does that affect the right chunk size?
+- If a key fact spans two adjacent chunks, will either chunk be retrievable on its own? What does overlap help with?
+- How would you know if your chunks are too small? Too large? What would bad retrieval results look like in each case? -->
 
 ## Retrieval Approach
 
@@ -55,6 +64,9 @@ The domain I chose is "course and professor reviews". While I was a Brooklyn Col
      If you were deploying this for real users and cost wasn't a constraint, what tradeoffs
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
+
+     sentence-transformers (all-MiniLM-L6-v2) is the embedding model I will be using. 
+     The chunk size I hope to use is 128. 
 
 **Embedding model:**
 
@@ -87,9 +99,9 @@ The domain I chose is "course and professor reviews". While I was a Brooklyn Col
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. Wrong Overlap Used
 
-2.
+2. Inconsistent documents due to webscraping RateMyProfessor
 
 ---
 

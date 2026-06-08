@@ -161,7 +161,7 @@
 - *What it produced:*
 - *What I changed or overrode:*
 
-
+<!-- 
 Notes:
 After cleaning, CISC1110.pdf is 828 tokens of text.
 
@@ -174,4 +174,16 @@ The first 7 are full 128-token chunks; the 8th starts at token 805 and runs to t
 Quick way to estimate it: ceil((828 − 13) / 115) = ceil(7.09) = 8.
 
 So it's the largest document by text volume (a 2-page syllabus PDF), and at 128-token chunks with overlap it lands at 8 chunks. That's consistent — the other syllabi (3130, 3150) are shorter and the review .txt files are ~2 KB each, hence their 3–7 chunks.
+--------------------------------------
+All 5 eval facts land intact in a single chunk, including the longer narrative answer (Q1's full NYU/Columbia comparison fits in CollegeVine-2). Nothing is split across a boundary, so increasing overlap would buy you nothing but redundancy.
+Token sizes are healthy (min 23 / max 129 / avg 117) and well under the model's 256-token window.
+Your corpus is still dominated by short reviews + fact-lookup questions, where smaller chunks give better retrieval precision. Going to 256 would merge multiple unrelated reviews into one chunk and dilute the embedding — actively worse for "what's Sokol's rating."
+The one mild risk with the new docs is that Reddit/CollegeVine are longer narrative discussions than the reviews. If, during Milestone 4 eval, Q1 retrieves only a fragment of the comparison reasoning, that's your signal to bump chunk size to ~192 for better narrative coherence. But right now the full answer already fits, so there's no reason to change preemptively.
 
+Decision rule for later: only change if eval shows a concrete failure —
+
+Retrieved chunk has half a multi-part answer → raise chunk size (192).
+A fact is split across two chunks → raise overlap.
+Neither is happening now.
+Lock in 128/13, move to embedding + retrieval, and let real eval results drive any change. That's also a stronger story for your README's Spec Reflection than tuning blind.
+-->

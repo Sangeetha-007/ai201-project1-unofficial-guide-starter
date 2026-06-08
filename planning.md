@@ -75,10 +75,24 @@ will increase it if needed. Overlap is considered best if its 10-12% of chunk si
 sentence-transformers (all-MiniLM-L6-v2)
 
 **Top-k:**
-Top-k=3
+Initial choice: Top-k=3
 The number of retrieved results specifies how many text segments are returned by the retrieval step. A small Top-k can miss relevant context, while a large Top-k increases recall but may introduce noise.
 
+Changed to: Top-k=5
+
 **Production tradeoff reflection:**
+
+So k=10 rescues exactly one of your two failures.
+
+Why that rescue isn't worth it:
+
+Q5's gold chunk sits at rank #10 with score 0.38 — the lowest of the ten, below nine chunks scoring 0.42–0.47 that are not about CISC 3150 credits (Piontnica reviews, Sokol's rating header, a Reddit thread). You'd be handing the LLM the right answer buried under 9 higher-scoring distractors. That's precisely the "dilute the context and pull the response off-target" failure your prompt warns about — the correct chunk being present doesn't mean it wins.
+You'd double the context size (and token cost) for every single query to salvage one question, and degrade the 3 questions that currently retrieve cleanly at #1.
+The honest conclusion: Q2 and Q5 are a ranking problem, not a k problem. Cranking k doesn't fix a chunk that ranks #10–15; it just floods generation with noise. The right fixes are retrieval-side:
+
+Hybrid keyword + vector search — "3150" and "big-O" are exact terms the embedding model underweights; a keyword signal would pull both gold chunks up fast.
+A stronger embedding model (e.g. bge-small-en) — better on short text with course codes.
+
 
 ---
 

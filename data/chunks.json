@@ -1,0 +1,345 @@
+[
+  {
+    "id": "CISC1110-0",
+    "source": "CISC1110.pdf",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "Brooklyn College\nDepartment of Computer and Information Science\nCISC 1110 (CIS 1.5) Introduction to Programming Using C++\n3 hours lecture, 2 hours lab; 4 credits\nAlgorithms, computers and programs. Writing, debugging, and testing programs. Loops and\nconditional control structures. Functions and parameter passing. Arrays, strings and simple\nclasses. Sorting, searching and other basic algorithms. Input and output. Programming\napplications selected from various disciplines. History and basic concepts of computer science.\nObjectives\nBy the end of this course, students should be able to:\n1. Understand the concept of a program (i.e., a computer following a"
+  },
+  {
+    "id": "CISC1110-1",
+    "source": "CISC1110.pdf",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "of a program (i.e., a computer following a series of instructions)\n2. Declare a variable with an appropriate data type (either character or numeric), initialize\nthe variable's value, and change the value when appropriate\n3. Use control structures, including a loop to repeat the execution of a series of statements\nand a conditional statement to select one from a series of alternatives\n4. Write a function to perform a subtask and use the function as part of a larger program\n5. Use an array to store multiple pieces of homogeneous data, and to use a simple class to\nstore multiple pieces of heterogeneous"
+  },
+  {
+    "id": "CISC1110-2",
+    "source": "CISC1110.pdf",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "use a simple class to\nstore multiple pieces of heterogeneous data\n6. Trace the execution of a program and predict the results of the execution\n7. Write an algorithm for a simple task\nTopics Outline\nI Introductory concepts -- simple programs, declaration and assignment statements, printing\nusing cout, for loops, simple conditional statements, data types int, char, and double, arithmetic\nops, precedence rules, standard library of functions\nII Reading Data -- reading using cin, interactive I/O, while loops, if-else statement, use of files\nfor input/output\nIII Functions -- introduction to functions in C++, programmer-"
+  },
+  {
+    "id": "CISC1110-3",
+    "source": "CISC1110.pdf",
+    "chunk_index": 3,
+    "token_count": 128,
+    "text": "Functions -- introduction to functions in C++, programmer-defined functions, prototypes,\nparameters, return types, void and parameterless functions, reference parameters\nIV Additional Control Structures – do-while loops, nested loops, nested if, logical and\nrelational operators (optional: break, continue, and switch statements)\nV Arrays -- one-dimensional arrays, using arrays with functions\nVI Strings -- using the C++ string class, string manipulation\nusing functions of the string class and programmer-defined functions\nVII Sorting and Searching -- simple sorting and searching algorithms\nVIII Simple Classes -- defining and using a behavior-less class (a"
+  },
+  {
+    "id": "CISC1110-4",
+    "source": "CISC1110.pdf",
+    "chunk_index": 4,
+    "token_count": 128,
+    "text": "Classes -- defining and using a behavior-less class (a class without member\nfunctions)\nIX Base Systems -- binary, decimal, and hexadecimal systems\nX Additional Computer Science Topics -- compilation and execution, parts of a computer\nsystem, history of computing, etc.\nStudents should expect to spend at least 10-15 hours per week preparing and running\nprogramming assignments. There will be two class exams, plus a final exam.\nTextbook\n Problem Solving With C++ (authors: J. Jones and K. Harrow)\n Workbook for C++ (author: Langsam)\nDetailed Syllabus\nTOPIC Hours Chapter in text\nIntro"
+  },
+  {
+    "id": "CISC1110-5",
+    "source": "CISC1110.pdf",
+    "chunk_index": 5,
+    "token_count": 128,
+    "text": "Langsam)\nDetailed Syllabus\nTOPIC Hours Chapter in text\nIntro to C++ and the IDE 1/2 hour Getting Started\nElementary data types (int, double, char) 5 1/2 hours 1 and 2\nsimple programs, arithmetic precedence\nloop constructs, cout, conditional statements\nIntro to the history of computing, 1 1/2 hours\nparts of a computer system,\ncompilation vs. execution\nInteractive data entry, cin for input, 3 1/2 hours 3\nwhile loops, if-else statements 3 hours\nusing files 2 hours\nTop-down programming, stepwise refinement 1 hour 4\nProgramming style 1 hour\nIntroduction to"
+  },
+  {
+    "id": "CISC1110-6",
+    "source": "CISC1110.pdf",
+    "chunk_index": 6,
+    "token_count": 128,
+    "text": "wise refinement 1 hour 4\nProgramming style 1 hour\nIntroduction to functions in C++ 7 hours 5\nFunction prototypes, parameter transmission\nby value, reference parameters\nNested ifs, do-while, 4 1/2 hours 6\n(opt: switch, break, continue statements)\nLogical and relational operators\nOne-dimensional arrays 6 hours 7\nIntroduction to operating systems, 1 1/2 hours\ndatabase, programming languages, etc.\nStrings, using library functions, 4 hours 8\nprogrammer-defined functions\nSorting and searching 4 hours 9\nDecimal, binary, and hexadecimal base systems 2 hours\nIntroduction to simple classes 3 hours 10\n(without member functions"
+  },
+  {
+    "id": "CISC1110-7",
+    "source": "CISC1110.pdf",
+    "chunk_index": 7,
+    "token_count": 23,
+    "text": "2 hours\nIntroduction to simple classes 3 hours 10\n(without member functions)\nClass exams and review 6 hours\nTotal 56 hours"
+  },
+  {
+    "id": "CISC3130-0",
+    "source": "CISC3130.pdf",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "Brooklyn College\nDepartment of Computer and Information Science\nCISC 3130 [22] Data Structures\n4 hours; 4 credits\nStacks and their implementations. Prefix, postfix, and infix notation. Queues and linked\nlists and their implementations. Binary and general trees and their implementations and\ntraversals. Sorting and searching techniques. Graph algorithms.\nObjectives\nBy the end of the course, students should be able to:\n1. Demonstrate understanding of the abstract properties of various data structures\nsuch as stacks, queues, lists, and trees and be able to use these structures\neffectively in application programs.\n2. Implement various data structures in more than one manner,"
+  },
+  {
+    "id": "CISC3130-1",
+    "source": "CISC3130.pdf",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": ".\n2. Implement various data structures in more than one manner, compare the different\nimplementations and explain the advantages and disadvantages of the different\nimplementations.\n3. Demonstrate understanding of and be able to program various sorting algorithms,\nand be able to compare the efficiency of these algorithms in terms of both time\nand space.\n4. Trace and code recursive functions.\n5. Demonstrate some understanding of object-oriented programming and be able to\nprogram with C++ classes.\nTextbook\nData Structures Using C and C++ second edition, by: Langsam, Tenenbaum,\nand Augenstein\nSyllabus\n1 Introduction, review parameter transmission, introduction to"
+  },
+  {
+    "id": "CISC3130-2",
+    "source": "CISC3130.pdf",
+    "chunk_index": 2,
+    "token_count": 129,
+    "text": "enstein\nSyllabus\n1 Introduction, review parameter transmission, introduction to prefix and\npostfix notation\n2 review notation, start to implement stacks\n3 implementing a stack using a structure\n4 overflow, underflow, introduction to recursion\n5 review stack implementation, discuss queues, recursion via stack for\nlocals, params\n6 introduction to C++, separate compilation\n7 stacks in C++\n8 discussion of nodes, up to struct node\n9 C implementation of a stack using nodes\n10 C++ stack implementation via Node and Stack classes\n11 queue primitive ops, implementation in C++\n12 implementation using array of nodes, review"
+  },
+  {
+    "id": "CISC3130-3",
+    "source": "CISC3130.pdf",
+    "chunk_index": 3,
+    "token_count": 128,
+    "text": "implementation in C++\n12 implementation using array of nodes, review for test\n13 TEST 1\n14 implementing a list in C++\n15 review nodes, lists, reference parameters in C++\n16 list iterators, special list features\n17 sorted list, intro to trees\n18 implementing a tree in C++, traversal methods\n19 non-recursive tree traversal methods\n20 C++ implementation of a tree, general trees\n21 review trees, intro to sorting\n22 heapsort, radix sort, review others\n23 big-O notation, divide and conquer\n24 review big-O, sorts, heapsort & quick"
+  },
+  {
+    "id": "CISC3130-4",
+    "source": "CISC3130.pdf",
+    "chunk_index": 4,
+    "token_count": 31,
+    "text": "24 review big-O, sorts, heapsort & quicksort code\n25 TEST 2\n26 searching\n27 hashing\n28 spanning trees\n29 review for final"
+  },
+  {
+    "id": "CISC_3150-0",
+    "source": "CISC_3150.pdf",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "CISC 3150 Object-Oriented Programming\n3 hours; 3 credits\nPrinciples and implementation issues in object-oriented programming languages, including:\nmemory and run-time models; encapsulation, inheritance and polymorphism; generics.\nCollections and other frameworks and hierarchies. Effects of binding time considerations on\nlanguage design and implementation. Introduction to design patterns, such as adapter,\nsingleton, and model-view-controller. Formal design specifications such as UML. Case studies\nchosen from multiple languages such as C++, Java and Smalltalk.\nPrerequisite: CISC 3120 [20.1] and 3130"
+  },
+  {
+    "id": "CISC_3150-1",
+    "source": "CISC_3150.pdf",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": ": CISC 3120 [20.1] and 3130 [22].\nSyllabus\nReview of OOP Basics\nEncapsulaiton\nInheritance\nPolymorphism\nAdvanced Concepts and Techniques\nForms of inheritance: interface, implementation\nProgramming by contract\nSubtyping vs subclassing\nDouble-dispatching\nReflection and runtime type information\nMultiple inheritance\nDesign Patterns\nOverview\nCreational\nAbstract Factory, Builder, Factory, Lazy Initialization, Object Pool, Singleton\nStructural\nAdaptor, Bridge, Composite, Flyweight\nBehavioral\nChain of Responsibility, Command, Iterator, Observer, Strategy\nMModel-View-Controller\nCollection Hierarches\nJava Collections Framework\nC++"
+  },
+  {
+    "id": "CISC_3150-2",
+    "source": "CISC_3150.pdf",
+    "chunk_index": 2,
+    "token_count": 92,
+    "text": "-Controller\nCollection Hierarches\nJava Collections Framework\nC++ STL containers\nGeneric Programming in the Context of OOP\nJava Generics\nC++'s STL <algorithm> library\nSmalltalk\nHistory and philosophy\nBasic programming: syntax, semantics, the environment; images\nMeta classes\nImplementation of Object-Oriented Languages\nFormal models of OOP systems\nUnified Modelling Language (UML)\nLinear temporal logic\nComputational tree logic\nFormal specification languages (Z, B, etc.)"
+  },
+  {
+    "id": "CollegeVine-0",
+    "source": "CollegeVine.docx",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "Thoughts on Computer Science Program at Brooklyn College?\nI'm narrowing down my college choices and noticed the Computer Science program at Brooklyn College. Anyone here who has experience or information about the program? I'm curious about the class quality, available resources, and how the program stacks up against other CS programs in the area.\n\nI can offer some insights about the Computer Science program at Brooklyn College. The program is known for its strong foundation in computer science concepts and offers a solid curriculum covering areas such as programming, data structures, algorithms, and computer organization. The faculty has a mix of seasoned professionals and researchers, which provides students with access to industry"
+  },
+  {
+    "id": "CollegeVine-1",
+    "source": "CollegeVine.docx",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "of seasoned professionals and researchers, which provides students with access to industry knowledge and cutting-edge research opportunities.\nIn terms of resources, Brooklyn College has computer labs and research facilities that offer various software development tools, databases, and high-performance computing resources to support the learning experience. Additionally, the college partners with local tech companies and startups, which can lead to internships, job placements, and networking opportunities for students in the program.\nComparing it to other CS programs in the area, it's important to consider factors that matter most to you. For example, if you value small class sizes and a more personalized learning experience,"
+  },
+  {
+    "id": "CollegeVine-2",
+    "source": "CollegeVine.docx",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "you value small class sizes and a more personalized learning experience, Brooklyn College's CS program might be a better fit compared to larger, more renowned programs at institutions like NYU or Columbia. However, if prestige and connections to big tech companies are more important to you, the programs at the latter universities may provide more of what you're looking for.\nTo get a more comprehensive understanding, I recommend reaching out to current students and alumni to get their first-hand perspectives on the program. Additionally, checking out online forums and review sites can provide you with insights into the student experience. Ultimately, it's essential to visit the campus and"
+  },
+  {
+    "id": "CollegeVine-3",
+    "source": "CollegeVine.docx",
+    "chunk_index": 3,
+    "token_count": 35,
+    "text": "experience. Ultimately, it's essential to visit the campus and attend open houses or information sessions to get a feel for the environment and learn more about the program in person."
+  },
+  {
+    "id": "Elefant-0",
+    "source": "Elefant.txt",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "2.8/ 5 Overall Quality Based on 71 ratings\nDeborah Elefant\nProfessor in the Computer Science department at Brooklyn College\n33% Would take again\n3 Level of Difficulty\nQuality\n1.0\nDifficulty\n5.0\nCISC1050\nMay 31st, 2026\nFor Credit: Yes\nAttendance: Mandatory\nGrade: C\nTextbook: Yes\nThis class seems easy in theory, but the professor makes it unnecessarily difficult. It's a basic computer course covering Word, Excel, and Access, yet instructions are often unclear. She doesn't use Brightspace, so you never know your grades. Homework must be emailed and printed, and points"
+  },
+  {
+    "id": "Elefant-1",
+    "source": "Elefant.txt",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "your grades. Homework must be emailed and printed, and points are deducted if you don't bring a hard copy.DONOTTAKEHER.\nQuality\n3.0\nDifficulty\n4.0\nCISC1050\nMar 18th, 2026\nAttendance: Mandatory\nWould Take Again: Yes\nGrade: A\nTextbook: N/A\nVery lecture heavy, make sure you take notes of even the smallest of things she deducts points on homeworks and exams if you fail to do exactly what she expected, but the exams are not bad because the steps tell you exactly how to get the result she wants\nTough graderLots of homeworkLecture heavy\nQuality"
+  },
+  {
+    "id": "Elefant-2",
+    "source": "Elefant.txt",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "result she wants\nTough graderLots of homeworkLecture heavy\nQuality\n1.0\nDifficulty\n3.0\nCISC1050\nDec 10th, 2025\nFor Credit: Yes\nAttendance: Mandatory\nGrade: Not sure yet\nTextbook: Yes\nI wanted to sign into rehab while taking her class. No cause why am I handing in a paper for a comp class like its literally about using word, access, exel, and powerpoint, why do I have to print the hw out?? The class in theory is easy, but somehow she made it annoying. The lectures are repeatitive, slow, and overall boring.\nQuality\n1.0\nDifficulty"
+  },
+  {
+    "id": "Elefant-3",
+    "source": "Elefant.txt",
+    "chunk_index": 3,
+    "token_count": 129,
+    "text": "itive, slow, and overall boring.\nQuality\n1.0\nDifficulty\n3.0\nCISC1050\nDec 3rd, 2025\nFor Credit: Yes\nAttendance: Mandatory\nGrade: Not sure yet\nTextbook: Yes\nHonestly the worst educator I've ever had in my life. Her classes are incredibly lecture heavy, which I normally don't mind but Prof. Elefant is great at making her lectures slow and unimaginably boring. Tests are easy, but homework's need to be done in a very specific way and a lot of the time just feels like a waste. Also can't use brightspace.\nTough graderLots"
+  },
+  {
+    "id": "Elefant-4",
+    "source": "Elefant.txt",
+    "chunk_index": 4,
+    "token_count": 71,
+    "text": ". Also can't use brightspace.\nTough graderLots of homeworkLecture heavy\nQuality\n3.0\nDifficulty\n5.0\nCISC1050\nNov 7th, 2025\nFor Credit: Yes\nAttendance: Mandatory\nGrade: Drop/Withdrawal\nTextbook: N/A\nI didn't understand anything in her class. No words to say. She needs improvement."
+  },
+  {
+    "id": "Gross-0",
+    "source": "Gross.txt",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "1.8\n/ 5\nOverall Quality Based on 96 ratings\nMurray Gross\nProfessor in the Computer Science department at Brooklyn College\n9% Would take again\n3.9 Level of Difficulty\nRating Distribution\nSimilar Professors\n00:15\n* Quality\n* 1.0\n* Difficulty\n* 5.0\n* CISC3140\n* Jun 1st, 2026\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade: D+\n* Textbook: N/A\n* In my 6 years at Brooklyn College, he's the worst professor: no Brightspace (no lectures/grades posted), answer exams his way or no credit, waste-of-time lectures, has an ego"
+  },
+  {
+    "id": "Gross-1",
+    "source": "Gross.txt",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "no credit, waste-of-time lectures, has an ego, yells at students in arguments. Didn't curve this semester. Other CS classes I've gotten a B or above. Take this class to lower your GPA and learn nothing.\n* Helpful\n* * Quality\n* 1.0\n* Difficulty\n* 4.0\n* CISC3140\n* May 30th, 2026\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade: C+\n* Textbook: Yes\n* Grading is rigid, answers must match exact wording or you lose all credit. Exam questions cover material never discussed in class. Unmonitored, unguide"
+  },
+  {
+    "id": "Gross-2",
+    "source": "Gross.txt",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "material never discussed in class. Unmonitored, unguided class project. Shouts at students.\n* Helpful\n* * * Quality\n* 1.0\n* Difficulty\n* 4.0\n* CISC3140\n* May 30th, 2026\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade: Not sure yet\n* Textbook: Yes\n* Exam questions cover material never discussed in class.\n* Tough graderGroup projectsTest heavy\n* Helpful\n* * 0\n* * 0\n* Quality\n* 1.0\n* Difficulty\n* 5.0\n* CISC3140\n* Feb 8th, 2026\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade:"
+  },
+  {
+    "id": "Gross-3",
+    "source": "Gross.txt",
+    "chunk_index": 3,
+    "token_count": 128,
+    "text": "6\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade: B\n* Textbook: N/A\n* I won't say avoid him because I know you cannot, so I'll try to be helpful. Try to do class project, at least make your mini-game working, listen to him and take notes, he will use class information for the exams or just cheat but he thinks he knows more that ChatGPT and he does not like the answers that he didn't mention in class. He curves a lot.\n* Tough graderGroup projects\n* Helpful\n* * * Quality\n* 1.0\n* Difficulty\n* 5."
+  },
+  {
+    "id": "Gross-4",
+    "source": "Gross.txt",
+    "chunk_index": 4,
+    "token_count": 111,
+    "text": "* * * Quality\n* 1.0\n* Difficulty\n* 5.0\n* CISC3140\n* Dec 30th, 2025\n* For Credit: Yes\n* Attendance: Mandatory\n* Grade: C+\n* Textbook: N/A\n* You won't learn anything in his class. No resources, or textbook to refer to, doesn't answer Emails. Studied hard but still ruined my GPA. The worst professor in Brooklyn College. He should have retired a long ago.\n* Tough graderBeware of pop quizzesTest heavy\n* Helpful\n* *"
+  },
+  {
+    "id": "Piontnica-0",
+    "source": "Piontnica.txt",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "4.3/ 5 Overall Quality Based on 9 ratings\nAdele Piontnica\nProfessor in the Computer Science department at Brooklyn College\n70% Would take again\n2.8 Level of Difficulty\n\nRating Distribution\n\nQuality\n3.0\nDifficulty\n1.0\nCISC1050\nJun 1st, 2026\nFor Credit: Yes\nAttendance: Not Mandatory\nGrade: A\nTextbook: N/A\nShe explains the material somewhat well, but she goes very slow. The assignments are simple and with clear instructions, however the grading in the syllabus was a bit confusing, and the syllabus was not up to date. There is only a final exam, which is multiple choice,"
+  },
+  {
+    "id": "Piontnica-1",
+    "source": "Piontnica.txt",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": ". There is only a final exam, which is multiple choice, very easy, and only 15% of grade.\nQuality\n5.0\nDifficulty\n2.0\nCISC1050\nMay 30th, 2026\nFor Credit: Yes\nAttendance: Mandatory\nWould Take Again: Yes\nGrade: A+\nTextbook: N/A\nunderrated professor. definitely have to put in the work if you want in the A range but the class was relatively easy and the final was only worth 30% (assignments make up the rest)\nQuality\n4.0\nDifficulty\n3.0\nCISC1050\nDec 27th, 2023\nFor Credit: Yes\nAttendance: Mandatory\nWould Take Again:"
+  },
+  {
+    "id": "Piontnica-2",
+    "source": "Piontnica.txt",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "2023\nFor Credit: Yes\nAttendance: Mandatory\nWould Take Again: Yes\nGrade: A\nTextbook: Yes\nprofessor is nice and approachable. the course isn't challenging, but she still makes you work for your grade; which isn't bad because you end up learning skills that's useful outside of class. assignments are easy if you follow the instructions in the book she assigned. overall, a good experience\nQuality\n5.0\nDifficulty\n3.0\nCIS1050\nNov 29th, 2023\nFor Credit: Yes\nAttendance: Not Mandatory\nWould Take Again: Yes\nGrade: C+\nTextbook: Yes\ntwo exams and couple assignments. overall pretty good\nClear"
+  },
+  {
+    "id": "Piontnica-3",
+    "source": "Piontnica.txt",
+    "chunk_index": 3,
+    "token_count": 124,
+    "text": "Textbook: Yes\ntwo exams and couple assignments. overall pretty good\nClear grading criteriaGives good feedbackRespected\nQuality\n5.0\nDifficulty\n3.0\nCISC1050\nNov 19th, 2023\nFor Credit: Yes\nAttendance: Mandatory\nWould Take Again: Yes\nGrade: A\nTextbook: Yes\nSuch a good professor, she knows what she's talking about and she doesn't hesitate to offer students help. Pick her if you want to pass this course!! other negative reviews were made by students who obviously didn't try in this course , if you study , you pass .\nAmazing lecturesRespectedLecture heavy"
+  },
+  {
+    "id": "Reddit-Brooklyn College Professor Review -0",
+    "source": "Reddit-Brooklyn College Professor Review .pdf",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "Brooklyn College Professor Review || CISC\nBrooklyn\nHas anyone taken Ariel Zablozki as their professor before? CISC 3320. How is he in terms of exam\nquestion pattern, marking and teaching?\nAlso, has anyone taken David Arnow for CISC 1115?\nUpvote\n2\nDownvote\n4\nGo to comments\nShare\nSort by:\nBest\nSearch Comments\nExpand comment search\nComments Section\nYou should check web central for course evacuations to see what previous students say. I believe\nzablozki is nee so not sure. Also lots of classes between 1115 and 3320 just curious. Heard overall\nokay about armow although i will"
+  },
+  {
+    "id": "Reddit-Brooklyn College Professor Review -1",
+    "source": "Reddit-Brooklyn College Professor Review .pdf",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "0 just curious. Heard overall\nokay about armow although i will say if its online and you never had coding experience it might be\nhard\nwell, I did competitive programming with python before. As for Zablozki, yea he is probably new.\nwhere on Web central do you look? Im new to CUNY so I don't know\nOkay then you should be good although idk theres roomers abt the first test u take caps ur grade not\nsure didnt take him. How can you be planning for taking 1115 and 3320 at the same time? And on bc\nwebcentral look under academics for bc"
+  },
+  {
+    "id": "Reddit-Brooklyn College Professor Review -2",
+    "source": "Reddit-Brooklyn College Professor Review .pdf",
+    "chunk_index": 2,
+    "token_count": 52,
+    "text": "time? And on bc\nwebcentral look under academics for bc feedback report\nI am a transfer student, got most of my 2000 level courses transferred, along with a few 3000 level\nones. Only this one course is left from pre 2000 level coruses."
+  },
+  {
+    "id": "Santhalingam-0",
+    "source": "Santhalingam.txt",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "3.4/ 5 Overall Quality Based on 7 ratings\nPanneer Santhalingam\nProfessor in the Computer Science department at Brooklyn College\n58% Would take again\n3 Level of Difficulty\nI'm Professor Santhalingam\nRating Distribution\nSimilar Professors\n* 5.00\n* Aakash Chopra\n* 4.80\n* Miriam Briskman\n* 4.80\n* Moshe Lach\n00:\n* Quality\n* 2.0\n* Difficulty\n* 3.0\n* CISC3410\n* May 2nd, 2026\n* For Credit: Yes\n* Attendance: Not Mandatory\n* Textbook: Yes\n* I don't think he is a good professor.\n* Helpful\n* * 0\n* *"
+  },
+  {
+    "id": "Santhalingam-1",
+    "source": "Santhalingam.txt",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "he is a good professor.\n* Helpful\n* * 0\n* * 0\n* Quality\n* 1.0\n* Difficulty\n* 5.0\n* CISC3440\n* Dec 11th, 2025\n* For Credit: Yes\n* Attendance: Not Mandatory\n* Grade: Not sure yet\n* Textbook: N/A\n* If you thought ziegler or zwick was bad, he is even worse. Honestly, he loses track of what he's even teaching and even told the class that he didn't get accepted to any other job but this one. I am also super terrified of his laughs.\n* Get ready to readLots of homeworkLe"
+  },
+  {
+    "id": "Santhalingam-2",
+    "source": "Santhalingam.txt",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "his laughs.\n* Get ready to readLots of homeworkLecture heavy\n* Helpful\n* * 0\n* * 0\n* Quality\n* 1.0\n* Difficulty\n* 4.0\n* CISC3440\n* May 17th, 2025\n* For Credit: Yes\n* Attendance: Not Mandatory\n* Grade: Not sure yet\n* Textbook: N/A\n* Worse professor in BC. He uses Chatgpt to generate the homework and his slides. There are 3 projects, 5 homeworks and final. Expect your work to be graded super late. His forced laughs are creepy. There were many times during his lecture he got confused on what he was teaching"
+  },
+  {
+    "id": "Santhalingam-3",
+    "source": "Santhalingam.txt",
+    "chunk_index": 3,
+    "token_count": 128,
+    "text": "many times during his lecture he got confused on what he was teaching and his accent made it even harder to hear what he was talking about.\n* Lots of homeworkLecture heavyTest heavy\n* Helpful\n* * 0\n* * 0\n* Quality\n* 5.0\n* Difficulty\n* 3.0\n* CISC3320\n* May 15th, 2025\n* For Credit: Yes\n* Would Take Again: Yes\n* First time teaching Operating Systems, hard class so study more than needed. Would recommend anyone to take Professor Santhalingam. 3 Projects, 5 homeworks, 1 midterm and 1 final.\n* Gives good feedbackTest heavyAccessible"
+  },
+  {
+    "id": "Santhalingam-4",
+    "source": "Santhalingam.txt",
+    "chunk_index": 4,
+    "token_count": 128,
+    "text": "and 1 final.\n* Gives good feedbackTest heavyAccessible outside class\n* Helpful\n* * 0\n* * 0\n* Quality\n* 5.0\n* Difficulty\n* 3.0\n* CISC3440\n* Dec 21st, 2024\n* For Credit: Yes\n* Attendance: Not Mandatory\n* Would Take Again: Yes\n* Grade: A\n* Textbook: Yes\n* There are multiple projects and homework per semester, but he makes the class easy to understand. Majority of his grades comes from homework and projects. His midterm is fairly simple and the final will be hard, but he curves well.\n* Amazing lecturesLots of homeworkAccessible"
+  },
+  {
+    "id": "Santhalingam-5",
+    "source": "Santhalingam.txt",
+    "chunk_index": 5,
+    "token_count": 128,
+    "text": "curves well.\n* Amazing lecturesLots of homeworkAccessible outside class\n* Helpful\n* * 0\n* * 0\n* Quality\n* 5.0\n* Difficulty\n* 2.0\n* CISC1215\n* Jun 2nd, 2024\n* For Credit: Yes\n* Attendance: Mandatory\n* Would Take Again: Yes\n* Textbook: Yes\n* Good professor, provides us lectures, but try to put work in even if he is easygoing\n* Amazing lecturesClear grading criteriaGives good feedback\n* Helpful\n* * 0\n* * 0\n* Quality\n* 5.0\n* Difficulty\n* 1.0\n* CISC1215\n* Mar 25th, 2024\n*"
+  },
+  {
+    "id": "Santhalingam-6",
+    "source": "Santhalingam.txt",
+    "chunk_index": 6,
+    "token_count": 117,
+    "text": "0\n* CISC1215\n* Mar 25th, 2024\n* For Credit: Yes\n* Attendance: Not Mandatory\n* Would Take Again: Yes\n* Amazing prof. Teaches with slides, live programming examples, and sometimes on the board to help break down concepts/examples. Hw is 3-5 coding problems based on the topics/slides learned with clear criteria. Tests are clear and based on slides/inclass lessons. He has a slight accent, but it does not get in the way of understanding him at all. 5/5.\n* Amazing lecturesClear grading criteriaCaring"
+  },
+  {
+    "id": "Sokol-0",
+    "source": "Sokol.txt",
+    "chunk_index": 0,
+    "token_count": 128,
+    "text": "3.7/ 5\nOverall Quality Based on 66 ratings\nDina Sokol\nProfessor in the Computer Science department at Brooklyn College\n70% Would take again\n3.2 Level of Difficulty\n\nQuality\n5.0\nDifficulty\n3.0\nCISC3115\nMay 31st, 2026\nFor Credit: Yes\nAttendance: Not Mandatory\nWould Take Again: Yes\nGrade: A+\nI had Prof. Sokol for CISC1115 in addition to CISC3115. She doesn't read off slides for the most part and instead does demonstrations at the front of the room for each lecture. While she does give weekly quizzes, the answers to her questions are"
+  },
+  {
+    "id": "Sokol-1",
+    "source": "Sokol.txt",
+    "chunk_index": 1,
+    "token_count": 128,
+    "text": "she does give weekly quizzes, the answers to her questions are always given in the lectures beforehand, as well as in the optional textbook.\nAmazing lecturesClear grading criteriaCaring\nQuality\n1.0\nDifficulty\n5.0\nCISC3115\nApr 27th, 2026\nFor Credit: Yes\nAttendance: Mandatory\nGrade: Not sure yet\nTextbook: N/A\nDefinitely highly rated for review. She's not the worst but also not the best, I put it just to not be highly rated.\nTough graderBeware of pop quizzesLecture heavy\nQuality\n3.0\nDifficulty\n3.0\nCISC3142\nMar 23rd, 2026\nFor"
+  },
+  {
+    "id": "Sokol-2",
+    "source": "Sokol.txt",
+    "chunk_index": 2,
+    "token_count": 128,
+    "text": "3.0\nCISC3142\nMar 23rd, 2026\nFor Credit: Yes\nAttendance: Mandatory\nGrade: Not sure yet\nTextbook: Yes\nYour major obstacles are: The first week because Professor Sokol has a specific way of wanting things done, and Pointers/References unit since that is just a confusing topic within C++. If you can't figure stuff out in her lectures, she does share some external materials to make it easier to understand\nGet ready to readParticipation mattersOnline Savvy\nQuality\n5.0\nDifficulty\n3.0\nCISC1115\nJan 29th, 2026\nFor Credit: Yes\nAttendance:"
+  },
+  {
+    "id": "Sokol-3",
+    "source": "Sokol.txt",
+    "chunk_index": 3,
+    "token_count": 128,
+    "text": "1115\nJan 29th, 2026\nFor Credit: Yes\nAttendance: Not Mandatory\nWould Take Again: Yes\nGrade: A\nTextbook: Yes\nGreat professor honestly. Her teaching style is really unique in the sense that she teaches on the fly, but I actually retained a lot of the information. Cares a lot about student's questions. OVERALL: would recommend. Would take again!\nQuality\n4.0\nDifficulty\n3.0\nCISC3142\nMay 27th, 2025\nFor Credit: Yes\nAttendance: Mandatory\nWould Take Again: Yes\nGrade: A-\nTextbook: Yes\nThere are some flaws to Sokol's teaching. Due to that, you might"
+  },
+  {
+    "id": "Sokol-4",
+    "source": "Sokol.txt",
+    "chunk_index": 4,
+    "token_count": 81,
+    "text": "Sokol's teaching. Due to that, you might find it hard to follow along or listen to the lectures. However, I strongly recommend you do as she is knowledgeable. She does not follow a strict teaching method in CS classes and often teaches on the go, but that form of teaching actually works despite how inefficient it sounds.\nClear grading criteriaLecture heavyTest heavy"
+  }
+]

@@ -119,6 +119,8 @@ The number of retrieved results specifies how many text segments are returned by
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
+![Pipeline](images/architecture.png)
+
 ---
 
 ## AI Tool Plan
@@ -132,6 +134,10 @@ The number of retrieved results specifies how many text segments are returned by
      "I'll use AI to help me code" is not a plan.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
+
+     I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
+     with my specified chunk size and overlap. I gave low values for chunk size and overlap, which may need to be
+     changed based on needs later. 
 
 **Milestone 3 — Ingestion and chunking:**
 

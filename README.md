@@ -160,3 +160,18 @@
 - *What I gave the AI:*
 - *What it produced:*
 - *What I changed or overrode:*
+
+
+Notes:
+After cleaning, CISC1110.pdf is 828 tokens of text.
+
+The chunk window advances by step = chunk_size − overlap = 128 − 13 = 115 tokens each time (the 13-token overlap means consecutive windows share tokens, so each one only moves forward 115). Window start positions:
+
+
+0, 115, 230, 345, 460, 575, 690, 805   → 8 windows = 8 chunks
+The first 7 are full 128-token chunks; the 8th starts at token 805 and runs to the end (828), so it's only 23 tokens — that's the min: 23 you saw in the stats.
+
+Quick way to estimate it: ceil((828 − 13) / 115) = ceil(7.09) = 8.
+
+So it's the largest document by text volume (a 2-page syllabus PDF), and at 128-token chunks with overlap it lands at 8 chunks. That's consistent — the other syllabi (3130, 3150) are shorter and the review .txt files are ~2 KB each, hence their 3–7 chunks.
+

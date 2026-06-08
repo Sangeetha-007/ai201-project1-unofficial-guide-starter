@@ -1,0 +1,74 @@
+﻿3.7/ 5
+Overall Quality Based on 66 ratings
+Dina Sokol
+Professor in the Computer Science department at Brooklyn College
+70% Would take again
+3.2 Level of Difficulty
+
+
+Quality
+5.0
+Difficulty
+3.0
+CISC3115
+May 31st, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Would Take Again: Yes
+Grade: A+
+I had Prof. Sokol for CISC1115 in addition to CISC3115. She doesn't read off slides for the most part and instead does demonstrations at the front of the room for each lecture. While she does give weekly quizzes, the answers to her questions are always given in the lectures beforehand, as well as in the optional textbook.
+Amazing lecturesClear grading criteriaCaring
+Quality
+1.0
+Difficulty
+5.0
+CISC3115
+Apr 27th, 2026
+For Credit: Yes
+Attendance: Mandatory
+Grade: Not sure yet
+Textbook: N/A
+Definitely highly rated for review. She's not the worst but also not the best, I put it just to not be highly rated.
+Tough graderBeware of pop quizzesLecture heavy
+Quality
+3.0
+Difficulty
+3.0
+CISC3142
+Mar 23rd, 2026
+For Credit: Yes
+Attendance: Mandatory
+Grade: Not sure yet
+Textbook: Yes
+Your major obstacles are: The first week because Professor Sokol has a specific way of wanting things done, and Pointers/References unit since that is just a confusing topic within C++. If you can't figure stuff out in her lectures, she does share some external materials to make it easier to understand
+Get ready to readParticipation mattersOnline Savvy
+Quality
+5.0
+Difficulty
+3.0
+CISC1115
+Jan 29th, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: Yes
+Great professor honestly. Her teaching style is really unique in the sense that she teaches on the fly, but I actually retained a lot of the information. Cares a lot about student's questions. OVERALL: would recommend. Would take again!
+Quality
+4.0
+Difficulty
+3.0
+CISC3142
+May 27th, 2025
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A-
+Textbook: Yes
+There are some flaws to Sokol's teaching. Due to that, you might find it hard to follow along or listen to the lectures. However, I strongly recommend you do as she is knowledgeable. She does not follow a strict teaching method in CS classes and often teaches on the go, but that form of teaching actually works despite how inefficient it sounds.
+Clear grading criteriaLecture heavyTest heavy
+
+
+
+
+*

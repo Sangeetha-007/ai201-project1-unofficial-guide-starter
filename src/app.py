@@ -170,7 +170,7 @@ def build_interface() -> gr.Blocks:
 
 
 def main() -> None:
-    build_interface().launch()
+    build_interface().launch(share=True)
 
 
 if __name__ == "__main__":

@@ -1,10 +1,11 @@
 # The Unofficial Guide — Project 1
 
 > **How to use this template:**
+<!-- 
 > Complete each section *after* you've built and tested the corresponding part of your system.
 > Do not write placeholder text — if a section isn't done yet, leave it blank and come back.
 > Every section below is required for submission. One-liners will not receive full credit.
-
+-->
 ---
 
 ## Domain
@@ -25,7 +26,7 @@ The documents chosen mentions to avoid certain professors, reasons to choose Bro
      Aim for variety — sources that together cover different subtopics or perspectives. -->
 
 | # | Source | Type | URL or file path |
-|-----------|------------------------------|-------------------|
+|---|--------|------|------------------|
 | 1 | RateMyProfessor | Review Site of Professors, review of Prof. Panneer Santhalingam |https://www.ratemyprofessors.com/professor/2995207 |
 | 2 | RateMyProfessor | Review Site of Professors, review of Prof. Murray Gross |https://www.ratemyprofessors.com/professor/167158|
 | 3 | RateMyProfessor | Review Site of Professors, review of Prof. Dina Sokol |https://www.ratemyprofessors.com/professor/334831 |

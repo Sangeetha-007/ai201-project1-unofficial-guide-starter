@@ -13,7 +13,9 @@
      Why is this knowledge valuable, and why is it hard to find through official channels?
      Example: "Student reviews of CS professors at [university] — useful because official
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
-
+The topic this system covers is "Course and Professor Reviews". 
+Student reviews of famous professors at Brooklyn College, because official sites don't give student reviews. 
+The documents chosen mentions to avoid certain professors, reasons to choose Brooklyn College's Computer Science program and descriptions of certain courses. 
 ---
 
 ## Document Sources
@@ -24,16 +26,17 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+|---|--------|-------------|-----------------|
+| 1 | RateMyProfessor | Review Site of Professors, review of Prof. Panneer Santhalingam |https://www.ratemyprofessors.com/professor/2995207 |
+| 2 | RateMyProfessor | Review Site of Professors, review of Prof. Murray Gross |https://www.ratemyprofessors.com/professor/167158|
+| 3 | RateMyProfessor | Review Site of Professors, review of Prof. Dina Sokol |https://www.ratemyprofessors.com/professor/334831 |
+| 4 | RateMyProfessor| Review Site of Professors, review of Prof. Adele Piontnica | https://www.ratemyprofessors.com/professor/2722205 |
+| 5 | RateMyProfessor | Review Site of Professors, review of Prof. Deborah Elefant | https://www.ratemyprofessors.com/professor/156077 |
+| 6 | Reddit | Online Forum | https://www.reddit.com/r/CUNY/comments/1ci3hcu/brooklyn_college_professor_review_cisc/ |
+| 7 | CollegeVine | | https://www.collegevine.com/faq/40319/thoughts-on-computer-science-program-at-brooklyn-college |
+| 8 | Introduction to Programming Using C++ Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC1110.pdf |
+| 9 | Data Structures Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC3130.pdf |
+| 10 | Object-Oriented Programming Syllabus | Pdf File | /Users/sangeetha/Downloads/CISC_3150.pdf |
 
 ---
 
@@ -47,13 +50,13 @@
      - What your final chunk count was across all documents -->
 
 **Chunk size:**
-
+Chunk size =128
 **Overlap:**
-
+Overlap = 13
 **Why these choices fit your documents:**
-
+I wanted to keep the chunk size small to avoid noise. Overlap should be around 10% of chunk size. 
 **Final chunk count:**
-
+49
 ---
 
 ## Embedding Model
@@ -65,9 +68,11 @@
      latency, and local vs. API-hosted. -->
 
 **Model used:**
+sentence-transformers (all-MiniLM-L6-v2)
 
 **Production tradeoff reflection:**
 
+There are some inaccuracies in the answers which will only be fixed with a hybrid retrieval approach. 
 ---
 
 ## Grounded Generation
@@ -80,8 +85,14 @@
      the mechanism. -->
 
 **System prompt grounding instruction:**
+System is "grounded" with prompt grounding which tells the model that it is only allowed to use the text provided. 
+
 
 **How source attribution is surfaced in the response:**
+
+Source attribution is applied by setting rules. The model is only allowed to use facts found in the context, and no
+outside knowledge. If it doesnt know the answer, it may not guess or infer based on the text provided. It has to say
+that it doesnt have enough information in my sources to answer the question. 
 
 ---
 
@@ -92,12 +103,14 @@
      valuable than a suspiciously perfect result. -->
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+|1|How does Brooklyn College's CS program compare to NYU and Columbia?|If you value small class sizes and a more personalized learning experience, Brooklyn College's CS program might be a better fit compared to larger, more renowned programs at institutions like NYU or Columbia. However, if prestige and connections to big tech companies are more important to you, the programs at NYU/Columbia may provide more of what you're looking for.|According to CollegeVine.docx, Brooklyn College's CS program might be a better fit if you value small class sizes and a more personalized learning experience, whereas NYU and Columbia's programs may provide more prestige and connections to big tech companies (CollegeVine.docx).|High Quality |accurate|
+| 2 | Which Computer Science course teaches big-O notation? | Data Structures | I don't have enough information in my sources to answer that. | Low Quality | inaccurate |
+| 3 | What's Prof. Dina Sokol's overall rating?  | 3.7 | Prof. Dina Sokol's overall rating is 3.7/5 (Sokol.txt). | High Quality | accurate |
+| 4 | What's Prof. Deborah Elefant's level of difficulty? | 3 | According to the context, Prof. Deborah Elefant's level of difficulty is rated as follows:
+3.0 (Elefant.txt, two instances)
+5.0 (Elefant.txt, one instance) | Partially relevant | Partially accurate |
+| 5 | How many credits is CISC 3150?| 3 credits | I don't have enough information in my sources to answer that. | Off-target | Inaccurate |
+
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -118,13 +131,15 @@
      results from an unrelated review" is an explanation. -->
 
 **Question that failed:**
-
+"What's Prof. Dina Sokol's overall rating?"
 **What the system returned:**
-
+According to the context, Prof. Deborah Elefant's level of difficulty is rated as follows:
+3.0 (Elefant.txt, two instances)
+5.0 (Elefant.txt, one instance)
 **Root cause (tied to a specific pipeline stage):**
-
+It is reading other values near it and thinking its the difficulty rating. 
 **What you would change to fix it:**
-
+Further data cleaning may be required, if not switching to a hybrid retrieval method may fix it. 
 ---
 
 ## Spec Reflection
@@ -133,8 +148,11 @@
      Answer both questions with at least 2–3 sentences each. -->
 
 **One way the spec helped you during implementation:**
-
+One way the spec helped me during implementation was identifying the questions beforehand. 
 **One way your implementation diverged from the spec, and why:**
+One way my implementation diverged from the spec is the top_k value. I started it as 3, but I had to change it to 5.
+Top_k value of 10 does give better answers, but after clarifying with Claude, it was decided that we keep top_k as 5,
+because a hybrid retrieval approach may fix current issues. 
 
 ---
 
@@ -151,15 +169,15 @@
 
 **Instance 1**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My Chunking Strategy section from planning.md (chunk size = 128, overlap = 13) and the documents/ folder, and asked Claude to implement an ingestion script that loads, cleans, and chunks the documents at those exact values.
+- *What it produced:* A pipeline (src/ingest.py) that loads .txt/.pdf/.docx, cleans the text, and chunks by token count using the all-MiniLM-L6-v2 tokenizer. Its first version sized chunks by tokens but rebuilt the text by decoding token IDs, which lowercased everything and added spaces around punctuation (e.g. "3.7" became "3. 7", "CISC 3150" became "cisc 3150").
+- *What I changed or overrode:* I had it switch to slicing the chunk out of the ORIGINAL cleaned text using token-to-character offsets, so chunks keep real casing and punctuation. This mattered because my eval answers are exact values like "3.7" and "3 credits" — the degraded form would have hurt both retrieval and the displayed sources. Final output: 49 chunks across 10 documents.
 
 **Instance 2**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My Retrieval Approach section (all-MiniLM-L6-v2, top-k = 3) and my 5 evaluation questions, and asked Claude to build the embedding + ChromaDB store + retrieval function and test it on those questions across different top-k values.
+- *What it produced:* src/vector_store.py (embeds chunks, stores them in ChromaDB with source metadata, retrieve() function) plus src/evaluate.py, which showed that at both k=3 and k=5 only 3/5 questions retrieved the correct chunk — the gold chunks for the big-O and CISC 3150 questions ranked #15 and #10.
+- *What I changed or overrode:* I raised top-k from 3 to 5 for recall headroom, but overrode the temptation to go to k=10. The evidence showed k=10 would only rescue one question while burying the right chunk under nine higher-scoring distractors, so I kept k=5 and concluded the real fix is retrieval-side (hybrid keyword + vector search), not a larger k.
 
 <!-- 
 Notes:

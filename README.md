@@ -25,8 +25,7 @@ The documents chosen mentions to avoid certain professors, reasons to choose Bro
      Aim for variety — sources that together cover different subtopics or perspectives. -->
 
 | # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-|---|--------|-------------|-----------------|
+|-----------|------------------------------|-------------------|
 | 1 | RateMyProfessor | Review Site of Professors, review of Prof. Panneer Santhalingam |https://www.ratemyprofessors.com/professor/2995207 |
 | 2 | RateMyProfessor | Review Site of Professors, review of Prof. Murray Gross |https://www.ratemyprofessors.com/professor/167158|
 | 3 | RateMyProfessor | Review Site of Professors, review of Prof. Dina Sokol |https://www.ratemyprofessors.com/professor/334831 |
@@ -103,13 +102,12 @@ that it doesnt have enough information in my sources to answer the question.
      valuable than a suspiciously perfect result. -->
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|1|How does Brooklyn College's CS program compare to NYU and Columbia?|If you value small class sizes and a more personalized learning experience, Brooklyn College's CS program might be a better fit compared to larger, more renowned programs at institutions like NYU or Columbia. However, if prestige and connections to big tech companies are more important to you, the programs at NYU/Columbia may provide more of what you're looking for.|According to CollegeVine.docx, Brooklyn College's CS program might be a better fit if you value small class sizes and a more personalized learning experience, whereas NYU and Columbia's programs may provide more prestige and connections to big tech companies (CollegeVine.docx).|High Quality |accurate|
-| 2 | Which Computer Science course teaches big-O notation? | Data Structures | I don't have enough information in my sources to answer that. | Low Quality | inaccurate |
-| 3 | What's Prof. Dina Sokol's overall rating?  | 3.7 | Prof. Dina Sokol's overall rating is 3.7/5 (Sokol.txt). | High Quality | accurate |
-| 4 | What's Prof. Deborah Elefant's level of difficulty? | 3 | According to the context, Prof. Deborah Elefant's level of difficulty is rated as follows:
-3.0 (Elefant.txt, two instances)
-5.0 (Elefant.txt, one instance) | Partially relevant | Partially accurate |
-| 5 | How many credits is CISC 3150?| 3 credits | I don't have enough information in my sources to answer that. | Off-target | Inaccurate |
+|---|----------|-----------------|------------------------------|-------------------|-------------------|
+| 1 | How does Brooklyn College's CS program compare to NYU and Columbia? | If you value small class sizes and a more personalized learning experience, Brooklyn College's CS program might be a better fit compared to larger, more renowned programs at institutions like NYU or Columbia. However, if prestige and connections to big tech companies are more important to you, the programs at NYU/Columbia may provide more of what you're looking for. | According to CollegeVine.docx, Brooklyn College's CS program might be a better fit if you value small class sizes and a more personalized learning experience, whereas NYU and Columbia's programs may provide more prestige and connections to big tech companies (CollegeVine.docx). | High Quality | Accurate |
+| 2 | Which Computer Science course teaches big-O notation? | Data Structures | I don't have enough information in my sources to answer that. | Low Quality | Inaccurate |
+| 3 | What's Prof. Dina Sokol's overall rating? | 3.7 | Prof. Dina Sokol's overall rating is 3.7/5 (Sokol.txt). | High Quality | Accurate |
+| 4 | What's Prof. Deborah Elefant's level of difficulty? | 3 | According to the context, Prof. Deborah Elefant's level of difficulty is rated as follows: 3.0 (Elefant.txt, two instances), 5.0 (Elefant.txt, one instance) | Partially relevant | Partially accurate |
+| 5 | How many credits is CISC 3150? | 3 credits | I don't have enough information in my sources to answer that. | Off-target | Inaccurate |
 
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  

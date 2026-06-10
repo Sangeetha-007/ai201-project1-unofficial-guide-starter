@@ -184,6 +184,8 @@ because a hybrid retrieval approach may fix current issues.
 ## Images
 
 ![UI](images/gradio.png)
+
+![UI2](images/gradio2.png)
 <!-- 
 Notes:
 After cleaning, CISC1110.pdf is 828 tokens of text.

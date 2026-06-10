@@ -72,7 +72,7 @@ sentence-transformers (all-MiniLM-L6-v2)
 
 **Production tradeoff reflection:**
 
-There are some inaccuracies in the answers which will only be fixed with a hybrid retrieval approach. 
+I chose all-MiniLM-L6-v2 because it is small, fast, and runs locally with no API cost, which fits a class project. If I were deploying this for real users and cost wasn't a constraint, I would weigh several tradeoffs. **Accuracy on domain-specific text** is my biggest concern: my evaluation showed this model underweights exact terms like course codes ("3150") and "big-O," so the gold chunks for those questions ranked #10 and #15 and were never retrieved. A stronger model such as bge-base-en or an API-hosted embedding (e.g. OpenAI text-embedding-3) would likely rank these short, keyword-heavy passages better. **Context length** matters less here since my chunks are only 128 tokens, well within all-MiniLM's 256-token window. The main tradeoffs against switching are **latency and cost** — a local 384-dim model returns results instantly with no network call or per-query fee, whereas an API-hosted model adds latency and ongoing cost. Given my accuracy issues are really a ranking problem, I would first try a hybrid keyword + vector retrieval approach before paying for a larger embedding model.
 ---
 
 ## Grounded Generation

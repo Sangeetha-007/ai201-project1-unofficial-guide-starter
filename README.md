@@ -49,6 +49,8 @@ The documents chosen mentions to avoid certain professors, reasons to choose Bro
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
+![Pipeline](images/architecture.png)
+
 **Chunk size:**
 Chunk size =128
 **Overlap:**
@@ -178,6 +180,10 @@ because a hybrid retrieval approach may fix current issues.
 - *What it produced:* src/vector_store.py (embeds chunks, stores them in ChromaDB with source metadata, retrieve() function) plus src/evaluate.py, which showed that at both k=3 and k=5 only 3/5 questions retrieved the correct chunk — the gold chunks for the big-O and CISC 3150 questions ranked #15 and #10.
 - *What I changed or overrode:* I raised top-k from 3 to 5 for recall headroom, but overrode the temptation to go to k=10. The evidence showed k=10 would only rescue one question while burying the right chunk under nine higher-scoring distractors, so I kept k=5 and concluded the real fix is retrieval-side (hybrid keyword + vector search), not a larger k.
 
+
+## Images
+
+![UI](images/gradio.png)
 <!-- 
 Notes:
 After cleaning, CISC1110.pdf is 828 tokens of text.
